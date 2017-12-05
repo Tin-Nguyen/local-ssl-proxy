@@ -21,8 +21,8 @@ Object.keys(config).forEach(function(name) {
     xfwd: true,
     ws: true,
     target: {
-      host: hostname,
-      port: target
+      host: 'localhost',
+      port: 3000
     },
     ssl: {
       key: fs.readFileSync(key, "utf8"),
